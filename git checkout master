@@ -1,0 +1,23 @@
+[33mcommit 2a04d1ff59a4db90bff43b5a68543f31955bc6c6[m[33m ([m[1;36mHEAD -> [m[1;32mdev[m[33m)[m
+Author: TseringDong <tseringlamadong@gmail.com>
+Date:   Mon Sep 20 16:54:49 2021 +0545
+
+     for dev branch user
+
+[33mcommit bd7fc30e870a8566cee7e8b7c3c8c2ce580f615d[m[33m ([m[1;32mmaster[m[33m)[m
+Author: TseringDong <tseringlamadong@gmail.com>
+Date:   Mon Sep 20 16:44:43 2021 +0545
+
+    changes the text in example1.txt
+
+[33mcommit e8974b9bb8fa0612f2d6760ccdc7f3f25beb4a04[m
+Author: TseringDong <tseringlamadong@gmail.com>
+Date:   Mon Sep 20 16:42:45 2021 +0545
+
+    Changes the text in examples.txt only
+
+[33mcommit 8abd7001fdee69e1ad2db8084db150dff1229949[m
+Author: TseringDong <tseringlamadong@gmail.com>
+Date:   Mon Sep 20 16:33:11 2021 +0545
+
+    Created new files for git demo
