@@ -43,4 +43,4 @@ console.log("~ file: array_method.js ~ line 35 ~ popExample", popExample);
 // shift 
 let shiftExample = ["apple", "banana", "avocado"];
 shiftExample.shift();
-console.log(popExample);
+console.log("~ file: array_method.js ~ line 45 ~ popExample", popExample);
