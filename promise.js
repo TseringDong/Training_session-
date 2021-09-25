@@ -1,0 +1,51 @@
+const getHelloWorldPromise = () => {
+    return new Promise((resolve, reject) => {
+        resolve("Hello world");
+        //  reject("There was some error"); 
+    });
+    return Promise.resolve(["direct", "resolve"])
+    //  return  Promise.reject(["this function failed"])
+};
+
+const getHelloWorldPromise = (throwError) => {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            if  (!throwError){
+                resolve("Hello world");
+            }else {
+                reject("error");   
+            }     
+        }, 1000
+
+});
+
+getHelloWorldPromise()
+    .then((result) => {
+    console.log("Success:", result);
+    return true  
+})
+.then ((Hello) => {
+    console.log("Next Promise:", Hello);
+})
+
+.catch((error) => {  //error handling 
+    console.log(error);
+});
+
+// // example1 
+// const getUserList = () => {
+//     return new Promise ((resolve, reject) => {
+//         setTimeout(() => {
+//              // resolve(["Tsering", "Tendi"])
+//               reject("there was some error fetching student data")
+//         }, 2000);
+
+//      });
+// }
+// getUserList().then(student => {
+//     console.log("success:", student);
+// })
+// // .catch((error) =>  console.log(error)); //single line .catch callback
+// .catch((error) => console.log(error))
+// .finally(() => console.log("Request complete"));  // argument uis always empty  
+   
