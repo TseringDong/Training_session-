@@ -78,28 +78,28 @@
 // });
 
 
-const yahooWeatherAPI = () => 
-    new Promise((resolve, reject) => {
-        setTimeout(() => {
-            resolve({
-                kathmandu: 20,
-            }, 1000);
-        });
-    });
+// const yahooWeatherAPI = () => 
+//     new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             resolve({
+//                 kathmandu: 20,
+//             }, 1000);
+//         });
+//     });
 
-const googleWeatherAPI = () => 
-    new Promise((resolve, reject) => {
-        setTimeout(() => {
-            resolve({
-                kathmandu: 19,
-            }, 2000);
-        });
-    });    
+// const googleWeatherAPI = () => 
+//     new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             resolve({
+//                 kathmandu: 19,
+//             }, 2000);
+//         });
+//     });    
 
-Promise.race([yahooWeatherAPI(), googleWeatherAPI()])
-    .then((result) => {
-        console.log("Weather update:", result);
-})
-    .catch((error) => {
-     console.log("Error:", error);
-});
+// Promise.race([yahooWeatherAPI(), googleWeatherAPI()])
+//     .then((result) => {
+//         console.log("Weather update:", result);
+// })
+//     .catch((error) => {
+//      console.log("Error:", error);
+// });
