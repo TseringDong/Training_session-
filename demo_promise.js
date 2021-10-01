@@ -80,19 +80,22 @@ const getUsersApi2 = () => {
     });
  }
 
+// Single Promise 
+getUsersApi1()
+.then((result) => {
+    console.log("users api 1", result);
+})
+.catch((error) => {
+    console.log("error:", error);
+});
 
-// promise
-// getUsersApi1()
-// .then((result) => {
-//     console.log("users api 1", result);
-// })
-// .catch((error) => {
-//     console.log("error:", error);
-// });
-
-// Promise.all([getUsersApi1(), getUsersApi2(), getUsersApi3()])
-// .then(result => console.log(result))
-// .catch(err => console.log(err));
+// Promise.all
+console.log("---------------------------");
+console.log("THIS IS PROMISE.ALL RESULT");
+console.log("----------------------------");
+Promise.all([getUsersApi1(), getUsersApi2(), getUsersApi3()])
+.then(result => console.log(result))
+.catch(err => console.log(err));
  
 // Promise.all([getUsersApi1(), getUsersApi2()])
 // .then((result) => {
@@ -101,10 +104,17 @@ const getUsersApi2 = () => {
 //     console.log("Error:",  error);
 // });
 
-// Promise race
+// Promise.race
+console.log("---------------------------");
+console.log("THIS IS PROMISE.RACE RESULT");
+console.log("---------------------------");
 Promise.race([getUsersApi1(), getUsersApi2(), getUsersApi3()])
 .then(result => console.log(result))
 .catch(err => console.log(err));
+ 
+
+
+
  
 
 
